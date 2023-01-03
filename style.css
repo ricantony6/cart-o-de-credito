@@ -77,3 +77,47 @@ body {
       -webkit-backdrop-filter: blur(5px);
       border: 1px solid var(--cor-borda-desfocado);
   }
+   .logo-mastercadr {
+       width: 100px;
+       height: auto;
+       filter: drop-shadow(2px 2px 5px black);
+   }
+
+   .card__giratorio-conteudo--traseira .cartao__chip {
+       grid-area: cartao__chip;
+       width: 30px;
+   }
+
+   .card__giratorio-conteudo--traseira .cartao__logo-pc {
+       grid-area: cartao__logo-pc;
+       width: 50px;
+       height: auto;
+       filter: drop-shadow(2px 2px 5px black);
+   }
+
+   .card__giratorio-conteudo--traseira .cartao__numeral {
+       grid-area: cartao__numeral;
+       margin: 0;
+       font-weight: 100;
+       font-size: 1.3rem;
+   }
+   .card__giratorio-conteudo--traseira .cartao__validade {
+       grid-area: cartao__validade;
+       margin: 0;
+       font-weight: 100;
+       font-size: .85rem;
+   }
+
+   .card__giratorio-conteudo--traseira .cartao__nome-pessoa {
+       grid-area: cartao__nome-pessoa;
+       margin: 0;
+       font-weight: 100;
+       font-size: .85rem;
+   }
+
+   .card__giratorio-conteudo--traseira .cartao__conta-corrente {
+       grid-area: cartao__conta-corrente;
+       margin: 0;
+       font-weight: 100;
+       font-size: .85rem;
+   }
