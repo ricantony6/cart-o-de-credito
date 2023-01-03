@@ -19,12 +19,13 @@
 
 body {
     background: #212123;
+    margin: 0;
 }
 
 
 .imagem__background {
     height: 100vh;
-    background-image: url('./imagens/ic-newyork.jpg');
+    background-image: url('./imagens/ic-paraiso.jpg');
     background-size: 100% center;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +86,11 @@ body {
 
    .card__giratorio-conteudo--traseira .cartao__chip {
        grid-area: cartao__chip;
-       width: 30px;
+       width: 40px;
+       position: relative;
+       left: 250px;
+       top: 30px;
+      
    }
 
    .card__giratorio-conteudo--traseira .cartao__logo-pc {
@@ -121,3 +126,26 @@ body {
        font-weight: 100;
        font-size: .85rem;
    }
+        .card__giratorio-conteudo--traseira .cartao__logo-mastercadr {
+            grid-area: cartao__logo-mastercadr;
+            width: 50px;
+            height: auto;
+            bottom: 10px;
+            position: relative;
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, .4));
+        }
+    
+        .card__giratorio-conteudo--traseira {
+            color: white;
+            transform: rotateY(180deg);
+            padding: 10px;
+            display: grid;
+            text-align: left;
+            grid-template-columns: 30px 1fr 50px 50px 50px 50px;
+            grid-template-rows: 1fr 20px 20px 20px 20px;
+            grid-template-areas: ". cartao__chip . . cartao__logo-pc ."
+                ". cartao__numeral cartao__numeral cartao__numeral . ."
+                ". . . cartao__validade . ."
+                ". cartao__nome-pessoa cartao__nome-pessoa . . cartao__logo-mastercadr"
+                ". cartao__conta-corrente cartao__conta-corrente cartao__conta-corrente . cartao__logo-mastercadr";
+        }
